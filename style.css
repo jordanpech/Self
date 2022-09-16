@@ -1,0 +1,105 @@
+
+/* ce fichier permet de styliser toutes les sous-pages */
+@font-face {
+    font-family: 'roboto';
+    src: url('font/roboto/roboto-medium-webfont.woff2') format('woff2'),
+         url('font/roboto/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+    /* ----------------------- mobile et pc ---------------------------- */
+
+  body                                        /* mobile et pc */  
+    {
+        cursor: crosshair;                      /* change l'icone de la souris */
+        background-image: url(image/backgroundpaper.png);   /* mettre une image en fond */
+        background-size: auto;     
+        background-attachment: fixed;           /* Le fond restera fixe */
+        background-size: 95%;  
+        overflow-x: hidden;                 /* taille du fond */
+                    
+    }
+a
+    {
+        text-decoration: none;       /* A l'origine, les textes qui redirige vers une page sont soulignés. ici j'enleve le soulignage */
+    } 
+p , h1 ,h2                             
+    {
+        font-family: "roboto",Arial, Helvetica, sans-serif;
+        
+    }
+    h1,h2,h3
+    {
+        text-transform:capitalize;
+    }
+
+    .corppage
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+header
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.titredepage
+{
+    display: flex;
+    text-align: center;
+    font-size: 1.3em; 
+  
+}
+.soustitre
+{
+    text-transform: none;
+    font-size: 75%;
+}
+
+.retour
+{
+  text-align: center; 
+  width: 14%;
+ 
+}
+.retourimage
+{
+    width: 50%;
+    filter: drop-shadow(2px 2px 2px black
+    );
+}
+h2
+{
+    text-decoration:solid;
+}
+ul
+{
+    list-style-type: none;
+}
+@media all and (max-width: 1274px)            /* mobile*/
+{
+
+.titredepage
+{
+    font-size:larger;
+    margin: auto;
+}
+.retour
+{ display: none;}
+
+.retourmobile,.retourmobile:visited
+{
+    color:blueviolet;
+}
+
+}
+@media all and (min-width: 1274px)
+{
+.retourmobile
+{
+ display: none;   
+}
+}
